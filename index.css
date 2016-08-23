@@ -1,0 +1,108 @@
+@font-face {
+    font-family: orbitron;
+    src: url(fonts/orbitron-light-webfont.woff);
+}
+
+h1 {
+	display: none;
+}
+
+body {
+	margin: 0;
+	background: #000; 
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+}
+
+video { 
+	position: fixed;
+		top: 50%;
+		left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	transition: 1s opacity;
+}
+.stopfade { 
+	opacity: .5;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 5% auto 0 auto;
+}
+
+#backdrop {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.5+31,0.8+100 */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 31%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 31%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 31%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	z-index: -50;
+}
+
+.fb-page,
+#logo {
+	width: 48%;
+	float: left;
+	text-align: center;
+}
+
+.fb-page {
+	width: 52%;
+}
+
+#logo img {
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+h2, p {
+	text-align: center;
+	color: #fff;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2 {
+	margin-top: 60px;
+	color: #00e7ff;
+	font-family: orbitron;
+}
+
+#discord-link {
+	display: block;
+	width: auto;
+	margin: 80px auto 0 auto;
+	max-width: 180px;
+	opacity: .5;
+	transition: opacity ease .2s;
+}
+
+#discord-link:hover {
+	opacity: 1;
+}
+
+#discord-link img {
+	max-width: 100%;
+}
+
+@media (max-width: 767px) {
+	.fb-page,
+	#logo {
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+	}
+}
