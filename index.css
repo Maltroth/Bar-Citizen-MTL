@@ -122,11 +122,16 @@ video {
 
 
 
-#logo img {
-
-	width: 100%;
-
+#logo-newsletter {
+	width: 40%;
+	margin: 0 auto;
 }
+
+#logo-newsletter img,
+#logo img {
+	width: 100%;
+}
+
 
 
 
